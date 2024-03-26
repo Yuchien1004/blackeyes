@@ -1,0 +1,279 @@
+/*背景*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+body{
+  background-image: url("frontcover.jpg");
+  background-color: #000;
+  background-position: 50% 0%;
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+/*框架*/
+.audioimg{
+  width: 100vw;
+  height: 100vh;
+  z-index: 16;
+}
+/*黑幕*/
+#backgroundImg{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0);
+  text-align:center;
+  top: 0%;
+  left: 0%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  z-index: 25;
+  transition: background-color 2s ease;
+}
+.imganimate{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0);
+  text-align:center;
+  top: 0%;
+  left: 0%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  z-index: 25;
+  animation: theend 1s forwards;
+}
+@keyframes theend {
+  0%{background-color: rgb(0, 0, 0, 0)}
+  100%{background-color: rgb(0, 0, 0, 1)}
+}
+.rule{
+  position: absolute;
+  display: none;
+  top: 5vh;
+  z-index: 18;
+  width: 40vh;
+  height: 65vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 1s ease 0s;
+}
+#ruleone{
+  opacity: 0;
+  left: 15%;
+}
+#ruletwo{
+  opacity: 0;
+  left: 50%;
+}
+#rulethree{
+  opacity: 0;
+  left: 37%;
+}
+/*開始遊戲*/
+#start{
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  top: 70%;
+  z-index: 99;
+}
+/*動畫樣式*/
+.animate{
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 70%;
+  animation: shine 2s infinite alternate forwards;
+  z-index: 99;
+}
+@keyframes shine {
+  0%{opacity: 1;}
+  10%{opacity: 1;}
+  90%{opacity: 0.1;}
+  100%{opacity: 0.1;}
+}
+.anima{
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 70%;
+  animation: fade 1s forwards;
+  z-index: 99;
+}
+@keyframes fade {
+  0%{opacity: 1;}
+  20%{opacity: 1;}
+  100%{opacity: 0;}
+}
+/*重玩*/
+#goback{
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #C6BC99;
+  border: 3px solid #C6BC99;
+  margin: 0;
+  padding: 0;
+  height: 3em;
+  width: 3em;
+  top: 70%;
+  z-index: 99;
+  white-space: pre-wrap;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  user-select: none;
+}
+#about{
+  user-select: none;
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  top: 95%;
+  left: 3%;
+  z-index: 99;
+  text-decoration: none;
+}
+/*對話框*/
+.dialogue{
+  display: none;
+  width: 80vw;
+  height: 30vh;
+  top: 65vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 3px #C6BC99 solid;
+  z-index: 19;
+  position: fixed;
+}
+#dialog{
+  user-select: none;
+  font-size: 25px;
+  margin-left: 25px;
+}
+#music{
+  border: 3px #fff solid;
+  display:inline;
+  position: fixed;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  margin-top: 1%;
+  margin-left: 94%;
+  z-index: 99;
+  background-size: cover;
+  background-image: url("靜音.png");
+}
+.choose{
+  position: absolute;
+  background: #D6D6AD;
+  font-size: 40px;
+  font-weight: bold;
+  border: 3px solid #D6D6AD;
+  height: 30%;
+  width: 40%;
+  top: 60%;
+  border-radius: 10px;
+  z-index: 19;
+  transition: all 0.5s ease 0s;
+}
+#choseone{
+  left: 6%;
+}
+#chosetwo{
+  right: 6%;
+}
+#nextbutton{
+  background-image: url("next.jpg");
+  background-size: cover;
+  display: none;
+  position: fixed;
+  z-index: 20;
+  width: 60px;
+  height: 60px;
+  top: 85%;
+  left: 82%;
+}
+#rainBox {
+  height: 100vh;
+}
+.rain {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  z-index: 17;
+  background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.66));
+}
+.rn{
+  user-select: none;
+  position: relative;
+  display: none;
+  width: 9%;
+  height: 7%;
+  top: 59.5%;
+  left: 12%;
+  padding: 0.5% 1%;
+  color: #fff;
+  z-index: 21;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.rn::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  bottom: 5px;
+  left: 0;
+  z-index: 20;
+  border-radius: 5px;
+  background: #C6BC99;
+  transform-origin: bottom;
+  transform: scale(1.3)perspective(15px)rotateX(5deg);
+}
+#ruleName{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 22;
+}
+#music:hover{border: 3px #f00 solid;}
+#choseone:hover{border: 3px #A3123A solid ;transform: scale(1.05)}
+#chosetwo:hover{border: 3px #A3123A solid ;transform: scale(1.05)}
+#goback:hover{border: 3px #fff solid; transform: scale(1.05)}
+#about:hover, #about:visited, #about:link, #about:active{
+  text-decoration: none;
+}

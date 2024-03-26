@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+body{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  overflow: hidden;
+}
+.back{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    background-image: url("roof.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+}
+h1{
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    top: 5%;
+    left: 4%;
+}
+.text{
+  width: 100vw;
+  height: 50vh;
+  top: 10%;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  left: 2%;
+}
+p{
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  z-index: 2;
+  left: 2%;
+}
+a{
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  z-index: 2;
+  left: 2%;
+  text-decoration: none;
+}
+a:hover, a:visited, a:link, a:active {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  z-index: 2;
+  left: 2%;
+  text-decoration: none;
+}
+#two{
+  top: 45%;
+}
+#three{
+  top: 55%;
+}
+#four{
+  top: 70%;
+}

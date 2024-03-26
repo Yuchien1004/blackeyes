@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>李龍第的千百種死法</title>
+    <!--引入CSS-->
+    <style>
+      @import url("style.css");
+    </style>
+  </head>
+
+  <body>
+    <audio id="eaudio" src="rain.MP3" loop></audio>
+    <div class="audioimg">
+      <input type="button" onclick="volume()" id="music">
+      <!--角色標籤-->
+      <div class="rn">
+        <p id="ruleName"></p>
+      </div>
+      <div class="rule" id="ruleone"></div>
+      <div class="rule" id="ruletwo"></div>
+      <div class="rule" id="rulethree"></div>
+      <div class="dialogue">
+        <p id="dialog"></p>
+        <input type="button" id="choseone" class="choose">
+        <input type="button" id="chosetwo" class="choose">
+        <div id="nextbutton"></div>
+      </div>
+    </div>
+    <div id="backgroundImg">
+        <p id="start">點擊開始遊戲</p>
+        <input type="button" id="goback" value="重玩一次">
+        <a href="demo.html" id="about" target="_blank">關於遊戲</a>
+    </div>
+    <div id="rainBox"></div>
+  </body>
+
+  <script type="text/javascript" src="script.js"></script>
+
+</html>
